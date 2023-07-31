@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.xtrape.system.api.factory.RemoteUserFallbackFactory,\
+  com.xtrape.system.api.factory.RemoteLogFallbackFactory, \
+  com.xtrape.system.api.factory.RemoteFileFallbackFactory, \
+  com.xtrape.system.api.factory.RemoteCultureFallbackFactory
+
+
