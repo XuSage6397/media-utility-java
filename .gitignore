@@ -1,6 +1,10 @@
-/target/
+.classpath
+.settings
+.project
+target
 /logs/
 # Editor directories and files
 .idea
+
 *.log
 *.iml
