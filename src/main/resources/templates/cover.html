@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        /*width: ${width}px;*/
+        /*height: ${height}px;*/
+        width: 1280px;
+        height: 720px;
+        border: 1px solid black;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        overflow: hidden;
+        font-size: ${fontSize};
+      }
+
+      .top {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+</head>
+<body>
+  <div class="top">
+    <div class="top-left">${logo}</div>
+    <div class="top-right">${deslang}</div>
+  </div>
+  <div class="content">
+    <div class="item"><image src=""/></div>
+  </div>
+</body>
+</html>

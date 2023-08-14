@@ -56,7 +56,7 @@ public class TextToImage {
 
     }
 
-    public void html2Image(String text, String file, ImageOptions imageOptions) throws IOException {
+    public void html2Image(String html, String file, ImageOptions imageOptions) throws IOException {
         System.setProperty("webdriver.chrome.driver", "/Users/xusage/Devapps/chromedriver/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true); // 设置为无头模式
@@ -68,18 +68,8 @@ public class TextToImage {
         Dimension dimension = new Dimension(imageOptions.getWidth(), imageOptions.getHeight());
         driver.manage().window().setSize(dimension);
 
-        StringWriter writer = new StringWriter();
-        try {
-            imageOptions.setContent(text);
-            buildHtml("templates/simple-text.vm", imageOptions, writer);
-            driver.get("data:text/html," + writer.toString());
-        }
-        catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        finally {
-            writer.close();
-        }
+        driver.get("data:text/html," + html);
+
         // 加载 HTML 字符串
 
         // 等待页面加载完成
@@ -108,7 +98,21 @@ public class TextToImage {
         driver.quit();
     }
 
-    private static void buildHtml(String templateName, ImageOptions options, Writer writer) throws IOException {
+    /**
+     * build image from template and options
+     * @param templateName
+     * @param imageOptions
+     * @throws IOException
+     */
+    private static void buildImage(String templateName, ImageOptions imageOptions) throws IOException {
+        String html = buildHtml(templateName, imageOptions);
+        html2Image(html, file, )
+
+    }
+
+    private static String buildHtml(String templateName, ImageOptions options) throws IOException {
+        StringWriter writer = new StringWriter();
+
         VelocityEngine velocityEngine = new VelocityEngine();
         velocityEngine.setProperty("resource.loader", "class");
         velocityEngine.setProperty("class.resource.loader.class", "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
@@ -128,7 +132,8 @@ public class TextToImage {
         template.merge(context, writer);
 
         // 输出渲染结果
-        System.out.println(writer.toString());
+//        System.out.println(writer.toString());
+        return writer.toString();
     }
 
     /**
