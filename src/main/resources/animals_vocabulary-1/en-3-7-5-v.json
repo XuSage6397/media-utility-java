@@ -1,0 +1,40 @@
+{
+  "logo": "Multisensory Memorize",
+  "subtitle": "audio_image - audio_script - audio_image_script",
+  "desLang": "EN",
+  "srcLang": "",
+  "style": {
+    "width":1280,
+    "height": 720,
+    "coverLineHeight": 140,
+    "fontSize": "1em",
+    "imageHeight": 480
+  },
+  "slides": [
+    {
+      "display": {
+        "audio": true,
+        "image": true
+      },
+      "during": 3000,
+      "template": "slide_1"
+    },
+    {
+      "display": {
+        "audio": true,
+        "script": true
+      },
+      "during": 3000,
+      "template": "slide_1"
+    },
+    {
+      "display": {
+        "audio": true,
+        "image": true,
+        "script": true
+      },
+      "during": 3000,
+      "template": "slide_1"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "title": "Animals Vocabulary (1)",
+  "logo": "Multisensory Memorize",
+  "items": [
+    {
+      "script": "antelope",
+      "image": "material/antelope.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "baboon",
+      "image": "material/baboon.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "bear",
+      "image": "material/bear.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "beaver",
+      "image": "material/beaver.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "bobcat",
+      "image": "material/bobcat.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "camel",
+      "image": "material/camel.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "caribou",
+      "image": "material/caribou.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "cat",
+      "image": "material/cat.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "deer",
+      "image": "material/deer.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "dog",
+      "image": "material/dog.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "elephant",
+      "image": "material/elephant.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "ferret",
+      "image": "material/ferret.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "giraffe",
+      "image": "material/giraffe.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "groundhog",
+      "image": "material/groundhog.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "hippopotamus",
+      "image": "material/hippopotamus.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "kangaroo",
+      "image": "material/kangaroo.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "lemur",
+      "image": "material/lemur.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "leopard",
+      "image": "material/leopard.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "lion",
+      "image": "material/lion.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "monkey",
+      "image": "material/monkey.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "mountain goat",
+      "image": "material/mountain_goat.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "mountain lion",
+      "image": "material/mountain_lion.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "polar bear",
+      "image": "material/polar_bear.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "rabbit",
+      "image": "material/rabbit.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "rhinoceros",
+      "image": "material/rhinoceros.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "tiger",
+      "image": "material/tiger.png",
+      "audio": "TTS"
+    },
+    {
+      "script": "zebra",
+      "image": "material/zebra.png",
+      "audio": "TTS"
+    }
+  ]
+}

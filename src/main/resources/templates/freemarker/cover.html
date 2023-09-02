@@ -10,8 +10,6 @@
         }
 
         body {
-            /*width: ${width}px;*/
-            /*height: ${height}px;*/
             width: 1280px;
             height: 720px;
             border: 1px solid black;
@@ -36,7 +34,7 @@
         .header {
             text-align: center;
             border-bottom: 1px solid gray;
-            padding: 8px 0px;
+            padding: 8px 0;
         }
         .title {
             font-size: 2em;
@@ -52,15 +50,14 @@
             margin: 8px;
             height: 600px;
             overflow: hidden;
-            font-size: $!style['fontSize'];
+            font-size: ${style.fontSize};
             flex-wrap: wrap;
         }
         .content .item {
-            height: $number.integer($style.itemHeight)px;
+            height: ${style.coverLineHeight}px;
         }
-        #set($itemImgHeight=$style.itemHeight - 30)
         .content img {
-            height: $itemImgHeight px;
+            height: ${style.coverLineHeight - 30}px;
         }
         .content .item .word {
             text-align: center;
@@ -70,20 +67,20 @@
 </head>
 <body>
 <div class="top">
-    <div class="top-left"><span>VIEUP</span><sub>.com</sub></div>
-    <div class="top-right">${deslang}</div>
+    <div class="top-left">${logo}</div>
+    <div class="top-right">${desLang}</div>
 </div>
 <div class="header">
     <div class="title">${title}</div>
     <div class="subtitle">${subtitle}</div>
 </div>
 <div class="content">
-#foreach($item in $!items)
+<#list items as item>
     <div class="item">
         <img src="${item.image}"/>
-        <div class="word">${item.word}</div>
+        <div class="word">${item.script}</div>
     </div>
-#end
+</#list>
 </div>
 </body>
 </html>

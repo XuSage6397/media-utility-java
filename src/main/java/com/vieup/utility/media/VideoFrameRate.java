@@ -1,4 +1,4 @@
-package com.vieupt.media.utility;
+package com.vieup.utility.media;
 
 public enum VideoFrameRate {
     HD_720P_WH(1280, 720),

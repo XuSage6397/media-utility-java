@@ -1,4 +1,4 @@
-package com.vieupt.media.utility;
+package com.vieup.utility.media;
 
 import org.bytedeco.ffmpeg.global.avcodec;
 import org.bytedeco.javacv.*;

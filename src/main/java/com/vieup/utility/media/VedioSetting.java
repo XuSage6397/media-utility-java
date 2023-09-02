@@ -1,4 +1,4 @@
-package com.vieupt.media.utility;
+package com.vieup.utility.media;
 
 import lombok.Data;
 

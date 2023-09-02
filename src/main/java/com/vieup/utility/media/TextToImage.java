@@ -1,4 +1,4 @@
-package com.vieupt.media.utility;
+package com.vieup.utility.media;
 
 import lombok.Data;
 
@@ -59,7 +59,13 @@ public class TextToImage {
     public void html2Image(String html, String file, ImageOptions imageOptions) throws IOException {
         System.setProperty("webdriver.chrome.driver", "/Users/xusage/Devapps/chromedriver/chromedriver");
         ChromeOptions options = new ChromeOptions();
-        options.setHeadless(true); // 设置为无头模式
+        options.setHeadless(true)
+                .addArguments("--remote-allow-origins=*"); // 设置为无头模式
+        options.addArguments("--headless");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--start-maximized");
 
         // 创建 ChromeDriver 对象
         WebDriver driver = new ChromeDriver(options);
@@ -106,8 +112,6 @@ public class TextToImage {
      */
     private static void buildImage(String templateName, ImageOptions imageOptions) throws IOException {
         String html = buildHtml(templateName, imageOptions);
-        html2Image(html, file, )
-
     }
 
     private static String buildHtml(String templateName, ImageOptions options) throws IOException {
