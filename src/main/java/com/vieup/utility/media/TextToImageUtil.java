@@ -23,7 +23,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-public class TextToImage {
+public class TextToImageUtil {
 
     public void buildImage(String text, int width, int height) {
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
@@ -178,7 +178,7 @@ public class TextToImage {
     }
 
     public void buildNumber99() throws IOException {
-        TextToImage textToImage = new TextToImage();
+        TextToImageUtil textToImage = new TextToImageUtil();
         ImageOptions options = new ImageOptions();
         options.setWidth(1280);
         options.setHeight(720);

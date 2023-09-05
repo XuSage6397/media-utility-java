@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.URL;
 
-public class TTSUtil {
+public class TextToSpeachUtil {
 
     public static String googleTranslateVoiceUrl(String language, String message) {
         return "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=" + language + "&q=" + message;
