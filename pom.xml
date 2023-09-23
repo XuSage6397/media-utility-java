@@ -35,7 +35,12 @@
             <version>4.6.0-1.5.8</version>
         </dependency>
 
-        <!-- Optional GPL builds with (almost) everything enabled -->
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>1.33.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.bytedeco</groupId>
             <artifactId>ffmpeg-platform-gpl</artifactId>
@@ -46,7 +51,6 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
@@ -58,13 +62,11 @@
             <artifactId>selenium-java</artifactId>
             <version>4.9.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-api</artifactId>
             <version>4.9.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
