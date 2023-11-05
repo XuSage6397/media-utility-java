@@ -9,12 +9,12 @@ import lombok.Data;
 public class EntryEntity {
 
     /**
-     * the locale of current entry
+     * the locale of current concept
      */
     String locale;
 
     /**
-     * the title of entry, which is base on the locale
+     * the title of concept, which is base on the locale
      */
     String title;
 
@@ -29,17 +29,17 @@ public class EntryEntity {
     String writing;
 
     /**
-     * the detail text description of the entry.
+     * the detail text description of the concept.
      */
     String rheme;
 
     /**
-     * the image of entry
+     * the image of concept
      */
     String image;
 
     /**
-     * the audio of entry
+     * the audio of concept
      */
     String audio;
 
