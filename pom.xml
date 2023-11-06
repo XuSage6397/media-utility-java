@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>vieup</groupId>
-    <artifactId>Vieup-media-utility</artifactId>
+    <artifactId>ContentMapper-media-utility</artifactId>
 
     <description>
        vieup media utility

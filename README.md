@@ -1,4 +1,4 @@
-# Vieup Media Utility
+# ContentMapper Media Utility
 
 ##  OpenCV Installation
 1.  In UBuntu
