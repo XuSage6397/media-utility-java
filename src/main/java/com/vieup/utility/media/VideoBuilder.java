@@ -125,7 +125,7 @@ public class VideoBuilder {
         }
     }
 
-    private static final String MATERIAL_JSON = "material.json";
+    private static final String MATERIAL_JSON = "crude.json";
     private void buildVideo(String baseDir, String lang, String model) throws Exception {
         VideoBuilder videoBuilder = new VideoBuilder();
 
